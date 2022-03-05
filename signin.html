@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>  Blogish  </title>
+</head>
+
+<body>
+   <main>
+    
+      <!-- N A V B A R -->
+      <nav class="navbar navbar-light  navbar-expand-md">
+         <div class="container-md">
+            <a href="/" class="navbar-brand text-uppercase fw-bold ">
+               Blogish <span class="fs-3 dot">.</span>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+               <ul class="navbar-nav me-0">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="home.html">home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/blogPost.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/about.html">about</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/contact.html">contact</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a  href="login.html" class=" btn btn-primary primary-btn text-uppercase ">login</a>
+                  </li>
+                  <li class="nav-item">
+                     <a  href="signin.html" class=" btn btn-outline-secondary  text-uppercase  ">Sign Up</a>
+                  </li>
+               </ul>
+            </div>
+
+
+         </div>
+
+      </nav>
+      <!-- N A V B A R -->
+
+<section class="container mt-4">
+   <h2 class="text-center fs-1">Sign in</h2>
+   <form method="POST" >
+      <div class="mb-3 ">
+         <label for="exampleFormControlInput1" class="form-label">Username </label>
+         <input type="text" class="form-control form-control-lg" id="user" placeholder="UserName" name="user" required minlength="4">
+       </div>
+      <div class="mb-3 ">
+         <label for="exampleFormControlInput1" class="form-label">Email </label>
+         <input type="email" class="form-control form-control-lg" id="email" placeholder="Email" name="email" required >
+       </div>
+     
+      <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label">Password </label>
+        <input type="password" class="form-control form-control-lg" id="password" placeholder="Your Password" name="password" required minlength="4">
+      </div>
+      <div class="d-grid">
+         <button type="submit" class="btn btn-primary primary-btn btn-lg"   id="login">Sign in</button>
+       </div>
+
+       {% if error %}
+         <div class="alert alert-danger alert-dismissible fade show mt-4" role="alert">
+               User Name is Used Before !
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+         </div>
+       {% endif %}
+     
+    </form>
+
+</section>
+
+
+    <!-- F O O T E R  -->
+    <footer class="footer py-3 my-5">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About US</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">contact</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">blogs</a></li>
+        <li class="nav-item"><a href="" id="admin" class="nav-link px-2 text-muted" data-bs-target="#adminLogin"
+            data-bs-toggle="modal">Admin</a></li>
+      </ul>
+      <p class="text-center text-muted">© <script>
+          document.write(new Date().getFullYear())
+        </script> Ultrasdzcoder, Inc</p>
+    </footer>
+    <!-- F O O T E R  -->
+
+
+
+  </main>
+
+
+
+  <script src="/js/popper.min.js"></script>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
