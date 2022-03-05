@@ -1,4 +1,4 @@
-# Blogish V1 🔥 (starter)
+# Blogish V1 🔥 
 #### HTML CSS JS BOOTSTRAP5
 ---
 By :<a href="https://www.youtube.com/c/UltrasDzCoder?sub_confirmation=1" traget="_blank"> UltrasDzCoder</a> 
